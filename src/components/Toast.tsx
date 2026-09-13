@@ -6,7 +6,7 @@ export function Toast() {
 
   useEffect(() => {
     if (!toast) return
-    const timer = window.setTimeout(dismissToast, 2200)
+    const timer = window.setTimeout(dismissToast, 2800)
     return () => window.clearTimeout(timer)
   }, [toast, dismissToast])
 
